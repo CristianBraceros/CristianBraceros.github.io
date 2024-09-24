@@ -10,6 +10,18 @@
         .text-shadow {
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
+        /* Estilos para pantallas grandes */
+        @media (min-width: 769px) {
+            .desktop-header-text {
+                top: 30%; /* Posición ajustada en PC para que esté un poco más arriba */
+                transform: translateY(-50%);
+            }
+            .desktop-button {
+                top: 70%; /* Botón debajo del video en pantallas grandes */
+                transform: translateY(-50%);
+            }
+        }
+        /* Estilos específicos para móviles y pantallas pequeñas */
         @media (max-width: 768px) {
             .md\:py-32 {
                 padding-top: 4rem;
@@ -58,13 +70,6 @@
             border-radius: 20px;
             display: block;
         }
-        /* Posiciones relativas del texto y el botón en pantallas más grandes */
-        .absolute-header-text {
-            top: 40%; /* Texto centrado en pantallas grandes */
-        }
-        .absolute-button {
-            top: 60%; /* Botón centrado debajo del texto en pantallas grandes */
-        }
     </style>
 </head>
 <body class="min-h-screen bg-black text-white font-sans">
@@ -79,10 +84,11 @@
                 </video>
             </div>
         </div>
-        <!-- Texto encima del marco en móviles -->
+        <!-- Texto y botón encima del marco en móviles y pantallas grandes -->
         <div class="absolute inset-0 flex flex-col items-center justify-center text-center z-10 bg-black bg-opacity-50 p-4">
-            <p class="text-xl md:text-2xl mb-8 text-shadow absolute mobile-header-text md:absolute-header-text">Filmmaker | Editor | Realizador</p>
-            <button id="exploreButton" class="bg-gray-300 text-black border-gray-300 hover:bg-gray-400 hover:border-gray-400 hover:text-black transition-colors rounded-full px-8 py-2 text-lg font-semibold absolute mobile-button md:absolute-button">
+            <!-- Para pantallas grandes (PC) -->
+            <p class="text-xl md:text-2xl mb-8 text-shadow absolute mobile-header-text md:static desktop-header-text">Filmmaker | Editor | Realizador</p>
+            <button id="exploreButton" class="bg-gray-300 text-black border-gray-300 hover:bg-gray-400 hover:border-gray-400 hover:text-black transition-colors rounded-full px-8 py-2 text-lg font-semibold absolute mobile-button md:static desktop-button">
                 Explorar Mi Trabajo
             </button>
         </div>
