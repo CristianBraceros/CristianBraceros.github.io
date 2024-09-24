@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cristian Braceros Portfolio</title>
+    <meta name="description" content="Filmmaker, Editor, and Realizador">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .text-shadow {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        @media (max-width: 768px) {
+            .md\:py-32 {
+                padding-top: 4rem;
+                padding-bottom: 4rem;
+            }
+            .md\:text-6xl {
+                font-size: 2.5rem;
+            }
+            .md\:text-2xl {
+                font-size: 1.5rem;
+            }
+            .md\:text-5xl {
+                font-size: 2.25rem;
+            }
+            .md\:text-xl {
+                font-size: 1.25rem;
+            }
+            .md\:text-3xl {
+                font-size: 1.875rem;
+            }
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-black text-white font-sans">
+    <!-- Header -->
+    <header class="relative w-full overflow-hidden flex items-center justify-center min-h-screen">
+        <div class="relative w-full max-w-5xl aspect-video rounded-3xl overflow-hidden bg-white p-4 shadow-2xl mx-4">
+            <div class="w-full h-full rounded-2xl overflow-hidden">
+                <video class="w-full h-full object-cover" loop muted playsinline>
+                    <source src="https://www.example.com/your-video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+        <div class="absolute inset-0 flex flex-col items-center justify-center text-center z-10 bg-black bg-opacity-50 p-4">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4 text-shadow">Cristian Braceros</h1>
+            <p class="text-xl md:text-2xl mb-8 text-shadow">Filmmaker | Editor | Realizador</p>
+            <button class="bg-gray-300 text-black border-gray-300 hover:bg-gray-400 hover:border-gray-400 hover:text-black transition-colors rounded-full px-8 py-2 text-lg font-semibold">
+                Explorar Mi Trabajo
+            </button>
+        </div>
+    </header>
+
+    <!-- About Me Section -->
+    <section class="py-16 md:py-32 px-4 bg-gradient-to-b from-black to-gray-900">
+        <div class="max-w-3xl mx-auto text-center">
+            <h2 class="text-3xl md:text-5xl font-bold mb-8">Sobre Mí</h2>
+            <p class="text-lg md:text-xl mb-12 leading-relaxed">
+                Soy un cineasta apasionado con más de una década de experiencia en dar vida a historias a través del lente. Mi
+                trabajo abarca desde documentales íntimos hasta secuencias de acción de alta intensidad, siempre
+                esforzándome por capturar la esencia de la emoción y la experiencia humana.
+            </p>
+            <a href="https://github.com/CristianBraceros/CristianBraceros.github.io/raw/9ef4475a6b70535bb2216d600a470cd160fe8383/CV%20curriculunm.pdf" download class="inline-flex items-center gap-2 rounded-full px-8 py-2 text-lg font-semibold bg-gray-300 text-black border-gray-300 hover:bg-gray-400 hover:border-gray-400 hover:text-black">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                Descargar CV
+            </a>
+        </div>
+    </section>
+
+    <!-- Featured Works Section -->
+    <section class="py-16 md:py-32 px-4 bg-black">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl md:text-5xl font-bold mb-16 text-center">Trabajos Destacados</h2>
+            <div class="relative">
+                <div class="aspect-video rounded-lg overflow-hidden mb-8">
+                    <iframe
+                        width="100%"
+                        height="100%"
+                        src="https://www.youtube.com/embed/GULTFdf7sLE"
+                        title="Promoción Tiempo de Paso"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                    ></iframe>
+                </div>
+                <button class="absolute top-1/2 left-4 transform -translate-y-1/2 rounded-full bg-gray-300 text-black border-gray-300 hover:bg-gray-400 hover:border-gray-400 hover:text-black p-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="15 18 9 12 15 6"></polyline>
+                    </svg>
+                </button>
+                <button class="absolute top-1/2 right-4 transform -translate-y-1/2 rounded-full bg-gray-300 text-black border-gray-300 hover:bg-gray-400 hover:border-gray-400 hover:text-black p-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                </button>
+            </div>
+            <div class="text-center mt-8">
+                <h3 class="text-2xl md:text-3xl font-semibold mb-4">Promoción Tiempo de Paso</h3>
+                <p class="text-lg md:text-xl text-gray-400">Promoción animada utilizando Blender para crear efectos CGI realistas. Un trabajo que combina animación 3D con técnicas avanzadas de edición digital.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-16 md:py-32 px-4 bg-gradient-to-b from-gray-900 to-black">
+        <div class="max-w-3xl mx-auto text-center">
+            <h2 class="text-3xl md:text-5xl font-bold mb-12">Contacto</h2>
+            <a href="mailto:braceroscristian@gmail.com" class="inline-flex items-center gap-2 rounded-full px-8 py-2 text-lg font-semibold bg-gray-300 text-black border-gray-300 hover:bg-gray-400 hover:border-gray-400 hover:text-black">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                braceroscristian@gmail.com
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 text-center text-gray-500">
+        <p>© 2023 Cristian Braceros. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const video = document.querySelector('video');
+            video.play().catch(error => {
+                console.error("Error attempting to play", error);
+            });
+
+            const featuredWorks = [
+                {
+                    id: '1',
+                    title: 'Promoción Tiempo de Paso',
+                    description: 'Promoción animada utilizando Blender para crear efectos CGI realistas. Un trabajo que combina animación 3D con técnicas avanzadas de edición digital.',
+                    videoUrl: 'https://www.youtube.com/embed/GULTFdf7sLE'
+                },
+                {
+                    id: '2',
+                    title: 'Videoclip Clavelito',
+                    description: 'Videoclip producido como parte de un proyecto académico. Se destaca por su narrativa visual creativa y el uso innovador de técnicas de filmación y edición.',
+                    videoUrl: 'https://www.youtube.com/embed/C6DvOhh3JY8'
+                },
+                {
+                    id: '3',
+                    title: 'Teaser - Buganvilla',
+                    description: 'Propuesta de teaser para una precuela de la saga de videojuegos Blasphemous. El video busca capturar el estilo oscuro y atmosférico del juego, con una narrativa visual cautivadora.',
+                    videoUrl: 'https://www.youtube.com/embed/sZS_Xnn6yHE'
+                },
+                {
+                    id: '4',
+                    title: 'Cortometraje Expres Lola la Bella',
+                    description: 'Cortometraje creado, producido y editado en un solo día, demostrando habilidades rápidas de dirección y edición. Fue semifinalista en la primera edición de ECAES, destacándose por su narrativa y producción ágil.',
+                    videoUrl: 'https://www.youtube.com/embed/JVuAkY0UZjQ'
+                },
+            ];
+
+            let currentWorkIndex = 0;
+
+            const iframe = document.querySelector('iframe');
+            const workTitle = document.querySelector('.text-2xl.md\\:text-3xl');
+            const workDescription = document.querySelector('.text-lg.md\\:text-xl.text-gray-400');
+
+            function updateWork() {
+                const currentWork = featuredWorks[currentWorkIndex];
+                iframe.src = currentWork.videoUrl;
+                iframe.title = currentWork.title;
+                workTitle.textContent = currentWork.title;
+                workDescription.textContent = currentWork.description;
+            }
+
+            document.querySelector('button[class*="left-4"]').addEventListener('click', () => {
+                currentWorkIndex = (currentWorkIndex === 0) ? featuredWorks.length - 1 : currentWorkIndex - 1;
+                updateWork();
+            });
+
+            document.querySelector('button[class*="right-4"]').addEventListener('click', () => {
+                currentWorkIndex = (currentWorkIndex === featuredWorks.length - 1) ? 0 : currentWorkIndex + 1;
+                updateWork();
+            });
+        });
+    </script>
+</body>
+</html>
